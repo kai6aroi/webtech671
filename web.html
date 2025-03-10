@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        nav { background: #333; padding: 10px; }
+        nav a { color: white; text-decoration: none; padding: 10px; }
+        nav a:hover { background: #555; }
+        .dropdown { display: inline-block; }
+        .dropdown-content { display: none; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); }
+        .dropdown:hover .dropdown-content { display: block; }
+        .table-container { display: flex; justify-content: center; margin: 20px; }
+        table { border-collapse: collapse; width: 80%; }
+        th, td { border: 1px solid black; padding: 10px; text-align: center; }
+        th { background: navy; color: white; }
+        .highlight { background: #ffeb99; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#timetable">Time Table</a>
+        <a href="#place">My Place</a>
+        <div class="dropdown">
+            <a href="#">My Friends ▼</a>
+            <div class="dropdown-content">
+                <a href="#">Friend 1</a>
+                <a href="#">Friend 2</a>
+                <a href="#">Friend 3</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="about">
+        <h1>About Me.</h1>
+        <p>My name is Yada Chansangdee</p>
+        <p><span style="color:blue">But you can call me</span> <span style="background:yellow">"May"</span></p>
+        <p style="color:green">I love dog.</p>
+        <p style="color:skyblue">But sometimes I love you^^</p>
+        <p style="color:red">Just kidding</p>
+        <p>I'm a 1st-year student at Silpakorn University.</p>
+        <img src="your-image.jpg" alt="My Photo" width="200">
+    </section>
+    
+    <section id="timetable">
+        <h1>Time Table</h1>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Day/Time</th>
+                    <th>07:35 - 08:25</th>
+                    <th>08:30 - 09:20</th>
+                    <th>09:25 - 10:15</th>
+                    <th>10:20 - 11:10</th>
+                    <th>11:15 - 12:05</th>
+                    <th>13:00 - 13:50</th>
+                    <th>13:55 - 14:45</th>
+                    <th>14:50 - 15:40</th>
+                    <th>15:45 - 16:35</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td></td>
+                    <td class="highlight">SU203</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight">Cal</td>
+                    <td class="highlight">Web</td>
+                    <td></td>
+                    <td class="highlight">SU401</td>
+                </tr>
+                <!-- Add other days similarly -->
+            </table>
+        </div>
+    </section>
+    
+    <section id="place">
+        <h1>My Place</h1>
+        <p>I study at Silpakorn University</p>
+        <img src="silpakorn.jpg" alt="Silpakorn University" width="400">
+    </section>
+</body>
+</html>
